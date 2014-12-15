@@ -102,7 +102,7 @@ gulp.task('img', function() {
 gulp.task('styles', function() {
   if (argv.production) { console.log('[styles] Processing styles for production env.' ); }
   else { console.log('[styles] Processing styles for dev env. No minifying here, for sourcemaps!') }
-  return gulp.src('assets/sass/main.scss')
+  return gulp.src(['assets/sass/themes/material.scss','assets/sass/themes/yago.scss'])
     .pipe($.rubySass({style: 'compact'}))
       .on('error', $.notify.onError(function (error) {
          console.log(error.message);

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="css/vendors.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/{% block theme %}{% endblock %}.css">
 
     <!-- If the query includes 'print-pdf', include the PDF print sheet -->
     <script>
@@ -53,7 +53,7 @@
         backgroundTransition: 'slide',
 
         theme: Reveal.getQueryHash().theme,
-        transition: Reveal.getQueryHash().transition || 'default',
+        transition: Reveal.getQueryHash().transition || '{% block transition %}{% endblock %}',
 
         // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
         // parallaxBackgroundSize: '2100px 900px',

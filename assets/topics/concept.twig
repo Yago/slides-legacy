@@ -1,5 +1,8 @@
 {% extends "layout.twig" %}
 
+{% block theme %}material{% endblock %}
+{% block transition %}slide{% endblock %}
+
 {% block content %}
 <section data-markdown data-transition="linear" data-background="#2d95e3">
   # Concept
@@ -7,13 +10,15 @@
 </section>
 
 <section>
-  <h3>Schéma de communication</h3>
-  <br />
-  <ul>
-    <li class="fragment arrow">Émetteur</li>
-    <li class="fragment arrow mine">Message</li>
-    <li class="fragment arrow">Recepteur</li>
-  </ul>
+  <div class="well">
+    <h3>Schéma de communication</h3>
+    <br />
+    <ul>
+      <li class="fragment arrow">Émetteur</li>
+      <li class="fragment arrow mine">Message</li>
+      <li class="fragment arrow">Recepteur</li>
+    </ul>
+  </div>
 </section>
 
 <section>
