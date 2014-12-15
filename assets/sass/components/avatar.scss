@@ -4,7 +4,6 @@
   padding: 0;
   max-height: 200px;
   margin-top: 20px !important;
-  box-shadow: inset 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .avatar-wrapper.bubble {
@@ -15,25 +14,27 @@
   display: inline-block;
   position: relative;
   z-index: -1;
-  background: $white;
-  height: 95%;
+  background: #fff;
+  height: 100%;
   padding: 0px !important;
   margin: 0 !important;
   float: left;
   line-height: 0 !important;
   img {
-    max-height: 100%;
+    display: inline-block;
+    max-height: 200px;
     max-width: 100%;
     margin: 0;
+    height: auto;
+    width: auto;
   }
 }
 
 .avatar p {
-  font-family: $title;
-  font-size: 30px;
+  font-size: $font-size-base/1.6 !important;
   text-align: left;
   position: absolute;
-  background: $white;
+  background: #fff;
   bottom: 110%;
   left: 10%;
   width: auto;
@@ -42,10 +43,8 @@
   padding: 5px 10px;
   z-index: 99;
   line-height: 1.1em;
-  font-weight: bold;
-  border-bottom: $silver solid 4px;
-  border-right: $silver solid 4px;
-  box-shadow: -10px 10px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: normal;
+  border: #afafaf solid 1px;
 }
 
 .avatar p:after {
@@ -57,7 +56,7 @@
   display: block;
   width: 0;
   z-index: 1;
-  bottom: -19px;
+  bottom: -18px;
   left: 23px;
 }
 
@@ -65,11 +64,11 @@
   content: '';
   position: absolute;
   border-style: solid;
-  border-width: 22px 15px 0;
-  border-color: $silver transparent;
+  border-width: 22px 13px 0;
+  border-color: #afafaf transparent;
   display: block;
   width: 0;
   z-index: 0;
-  bottom: -26px;
-  left: 20px;
+  bottom: -22px;
+  left: 22px;
 }
