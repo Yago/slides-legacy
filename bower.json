@@ -7,7 +7,6 @@
     "Cortana": "~1.2.8",
     "bootstrap-sass-official": "~3.3.0",
     "bootstrap-material-design": "0.2.1",
-    "rainbow": "1.1.9",
     "reveal.js": "2.6.2"
   }
 }

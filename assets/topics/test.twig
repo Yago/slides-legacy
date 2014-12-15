@@ -5,12 +5,12 @@
 
 {% block content %}
 <section>
-  <ul>
-    <li class="arrow">Atome</li>
-    <li class="arrow mine">Molécule</li>
-    <li class="arrow">Organisme</li>
-    <li class="arrow mine">Template</li>
-    <li class="arrow">Page</li>
-  </ul>
+  <pre><code data-language="javascript">
+var gulp = require('gulp'),
+$ = require('gulp-load-plugins')(),
+browserSync = require('browser-sync'),
+reload = browserSync.reload,
+runSequence = require('run-sequence');
+  </code></pre>
 </section>
 {% endblock %}

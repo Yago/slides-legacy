@@ -33,7 +33,6 @@ gulp.task('vendors', function() {
 
   gulp.src([
       'bower_components/jquery/dist/jquery.js',
-      'bower_components/rainbow/js/rainbow.js',
       'bower_components/reveal.js/lib/js/head.min.js',
       'bower_components/reveal.js/js/reveal.js'
     ])
