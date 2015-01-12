@@ -34,7 +34,8 @@ gulp.task('vendors', function() {
   gulp.src([
       'bower_components/jquery/dist/jquery.js',
       'bower_components/reveal.js/lib/js/head.min.js',
-      'bower_components/reveal.js/js/reveal.js'
+      'bower_components/reveal.js/js/reveal.js',
+      'bower_components/emojify.js/emojify.js'
     ])
     .pipe($.concat('vendors.min.js'))
     .pipe($.uglify())
@@ -72,6 +73,11 @@ gulp.task('vendors', function() {
     .pipe($.concat('polyfills.min.js'))
     .pipe($.uglify())
     .pipe(gulp.dest('build/js'));
+
+  gulp.src([
+      'bower_components/emojify.js/images/emoji/*'
+    ])
+    .pipe(gulp.dest('build/img/emoji'));
 });
 
 /**

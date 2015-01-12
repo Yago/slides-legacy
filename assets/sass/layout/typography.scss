@@ -6,3 +6,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $headings-font-weight !important;
   margin: 0.2em 0 0.4em 0 !important;
 }
+
+ul li {
+  line-height: 1.6em !important;
+}
