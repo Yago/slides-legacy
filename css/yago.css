@@ -2064,11 +2064,17 @@ pre .variable.global, pre .variable.class, pre .variable.instance { color: #A6E2
 
 .emoji { width: 1em; height: 1em; display: inline-block; margin-bottom: -0.25em; }
 
+.reveal table.text-center td, .reveal table.text-center th { text-align: center; }
+
 h1, h2 { text-transform: uppercase; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 500 !important; margin: 0.2em 0 0.4em 0 !important; }
 
 ul li { line-height: 1.6em !important; }
+
+.reveal ul.list-unstyled { list-style-type: none; padding: 10px 0 !important; margin: 0; }
+
+.panel-body { padding: 15px !important; border: 1px solid #ddd !important; }
 
 .avatar-wrapper { display: inline-block; width: auto; padding: 0; max-height: 200px; margin-top: 20px !important; }
 

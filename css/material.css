@@ -2065,11 +2065,17 @@ pre .variable.global, pre .variable.class, pre .variable.instance { color: #A6E2
 
 .emoji { width: 1em; height: 1em; display: inline-block; margin-bottom: -0.25em; }
 
+.reveal table.text-center td, .reveal table.text-center th { text-align: center; }
+
 h1, h2 { text-transform: uppercase; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 800 !important; margin: 0.2em 0 0.4em 0 !important; }
 
 ul li { line-height: 1.6em !important; }
+
+.reveal ul.list-unstyled { list-style-type: none; padding: 10px 0 !important; margin: 0; }
+
+.panel-body { padding: 15px !important; border: 1px solid #ddd !important; }
 
 section { background: #fff; box-shadow: rgba(0, 0, 0, 0.15686) 0px 3px 6px 0px, rgba(0, 0, 0, 0.22745) 0px 3px 6px 0px; border-radius: 4px; }
 
@@ -2102,5 +2108,7 @@ body { background: #EFEFEF; background: -moz-linear-gradient(top, #EFEFEF 0%, #f
 .fade { opacity: 1; }
 
 section { text-align: left; padding: 30px 50px !important; }
+
+.progress { background: none; box-shadow: none; }
 
 /*# sourceMappingURL=material.css.map */
