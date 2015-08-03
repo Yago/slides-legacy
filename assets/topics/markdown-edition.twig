@@ -1,0 +1,694 @@
+{% extends "layout.twig" %}
+
+{% block theme %}material{% endblock %}
+{% block transition %}slide{% endblock %}
+
+{% block content %}
+<section data-markdown data-transition="linear" data-background="#fff" class="text-center" style="color:#c0c0c0;">
+  ![md](img/markdown/markdown.png)
+  ## Markdown edition
+</section>
+
+<section>
+  <p>Content edition for normal guys :</p>
+  <br>
+  <img src="img/markdown/word.png">
+</section>
+
+<section>
+  <p>Content edition for devs :</p>
+  <br>
+  <img src="img/markdown/html.png">
+</section>
+
+<section class="text-center">
+  <img src="img/markdown/md-meme.jpg">
+</section>
+
+<section class="text-center">
+  <a href="https://rawgit.com/fletcher/human-markdown-reference/master/index.html"><img src="img/markdown/cheatsheet.png"></a>
+</section>
+
+<section>
+  <pre><code data-language="css">
+# Title level 1
+## Title level 2
+### Title level 3
+  </code></pre>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h2>Title level 1</h2>
+      <h3>Title level 2</h3>
+      <h4>Title level 3</h4>
+    </div>
+  </div>
+</section>
+
+<section>
+  <pre><code data-language="css">
+This text is **bold**.
+This text is *italicized*.
+Link to [Google](http://google.com).
+  </code></pre>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      This text is <b>bold</b>.<br>
+      This text is <em>italicized</em>.<br>
+      Link to <a href="http://google.com">Google</a>.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>But which editor ?</h3>
+  <div class="text-center">
+      <img src="img/markdown/appstore.png" alt="" class="fragment">
+  </div>
+</section>
+
+<section style="background:none;box-shadow:none;">
+  <h3>We have to define criterions...</h3>
+</section>
+
+<section class="text-center">
+  <h3 class="text-left">1. Shortcuts</h3>
+  <img src="img/markdown/shortcuts.gif" class="fragment">
+</section>
+
+<section class="text-center">
+  <h3 class="text-left">2. Lists</h3>
+  <img src="img/markdown/lists.gif" class="fragment">
+</section>
+
+<section class="text-center">
+  <h3 class="text-left">3. Customization</h3>
+  <img src="img/markdown/customization.gif" class="fragment">
+</section>
+
+<section class="text-center">
+  <h3 class="text-left">4. Minimalism</h3>
+  <img src="img/markdown/minimal.gif" class="fragment">
+</section>
+
+<section style="background:none;box-shadow:none;">
+  <h1>Apps</h1>
+</section>
+
+{# MOU ====================================== #}
+<section class="text-center">
+  <br>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <img src="img/markdown/mou.png" class="img-responsive">
+    </div>
+  </div>
+  <br>
+  <h3>Mou</h3>
+  <small>
+    free (during beta) -
+    <a href="http://25.io/mou/" class="btn btn-default btn-sm" style="font-size:0.5em;">Download</a>
+  </small>
+</section>
+
+<section class="text-center">
+  <br>
+  <img src="img/markdown/mou-screen.png">
+  <br>
+</section>
+
+<section>
+  <br>
+  <table class="table table-bordered text-center" style="font-size:0.8em;">
+    <thead>
+      <tr>
+        <th>Shortcuts</th>
+        <th>Lists</th>
+        <th>Customization</th>
+        <th>Minimalism</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-danger">✕</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Pros</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:+1: Nice live preview</li>
+        <li class="fragment">:+1: Code editor oriented</li>
+        <li class="fragment">:+1: Free !</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h3>Cons</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:thumbsdown: Live preview</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{# iA Writer ====================================== #}
+<section class="text-center">
+  <br>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <img src="img/markdown/iawriter.png" class="img-responsive">
+    </div>
+  </div>
+  <br>
+  <h3>iA Writer</h3>
+  <small>
+    10CHF -
+    <a href="https://ia.net/writer/mac/" class="btn btn-default btn-sm" style="font-size:0.5em;">Download</a>
+  </small>
+</section>
+
+<section class="text-center">
+  <br>
+  <img src="img/markdown/iawriter-screen.png">
+  <br>
+</section>
+
+<section>
+  <br>
+  <table class="table table-bordered text-center" style="font-size:0.8em;">
+    <thead>
+      <tr>
+        <th>Shortcuts</th>
+        <th>Lists</th>
+        <th>Customization</th>
+        <th>Minimalism</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-danger">✕</span></td>
+        <td><span class="fragment text-danger">✕</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Pros</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:+1: Very disctraction-free !</li>
+        <li class="fragment">:+1: The first of this kind</li>
+        <li class="fragment">:+1: Mobile app</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h3>Cons</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:thumbsdown: Too minimalist</li>
+        <li class="fragment">:thumbsdown: No settings</li>
+        <li class="fragment">:thumbsdown: Poor preview mode</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{# iA Writer Pro ====================================== #}
+<section class="text-center">
+  <br>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <img src="img/markdown/iawriterpro.png" class="img-responsive">
+    </div>
+  </div>
+  <br>
+  <h3>iA Writer Pro</h3>
+  <small>
+    20CHF -
+    <a href="http://writer.pro/" class="btn btn-default btn-sm" style="font-size:0.5em;">Download</a>
+  </small>
+</section>
+
+<section class="text-center">
+  <br>
+  <img src="img/markdown/river2.png">
+  <br>
+</section>
+
+<section class="text-center">
+  <br>
+  <img src="img/markdown/iawriterpro-screen.png">
+  <br>
+</section>
+
+<section>
+  <br>
+  <table class="table table-bordered text-center" style="font-size:0.8em;">
+    <thead>
+      <tr>
+        <th>Shortcuts</th>
+        <th>Lists</th>
+        <th>Customization</th>
+        <th>Minimalism</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-danger">✕</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Pros</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:+1: The workflow</li>
+        <li class="fragment">:+1: The lifestyle behind</li>
+        <li class="fragment">:+1: Mobile app</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h3>Cons</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:-1: No settings</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+{# Byword ====================================== #}
+<section class="text-center">
+  <br>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <img src="img/markdown/byword.png" class="img-responsive">
+    </div>
+  </div>
+  <br>
+  <h3>Byword</h3>
+  <small>
+    12CHF -
+    <a href="http://bywordapp.com/" class="btn btn-default btn-sm" style="font-size:0.5em;">Download</a>
+  </small>
+</section>
+
+<section class="text-center">
+  <br>
+  <img src="img/markdown/byword-screen.png">
+  <br>
+</section>
+
+<section>
+  <br>
+  <table class="table table-bordered text-center" style="font-size:0.8em;">
+    <thead>
+      <tr>
+        <th>Shortcuts</th>
+        <th>Lists</th>
+        <th>Customization</th>
+        <th>Minimalism</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Pros</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:+1: Minimalist, but thoughtful</li>
+        <li class="fragment">:+1: Many export options</li>
+        <li class="fragment">:+1: Publishing feature</li>
+        <li class="fragment">:+1: Mobile app</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h3>Cons</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:thumbsdown: Too little customization options</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{# Typed ====================================== #}
+<section class="text-center">
+  <br>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <img src="img/markdown/typed.png" class="img-responsive">
+    </div>
+  </div>
+  <br>
+  <h3>Typed</h3>
+  <small>
+    19CHF -
+    <a href="http://realmacsoftware.com/typed" class="btn btn-default btn-sm" style="font-size:0.5em;">Download</a>
+  </small>
+</section>
+
+<section class="text-center">
+  <br>
+  <img src="img/markdown/typed-screen.png">
+  <br>
+</section>
+
+<section>
+  <br>
+  <table class="table table-bordered text-center" style="font-size:0.8em;">
+    <thead>
+      <tr>
+        <th>Shortcuts</th>
+        <th>Lists</th>
+        <th>Customization</th>
+        <th>Minimalism</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-danger">✕</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Pros</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:+1: Relaxing music</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h3>Cons</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:-1: Too little customization options</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+{# Folding text ====================================== #}
+<section class="text-center">
+  <br>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <img src="img/markdown/foldingtext.png" class="img-responsive">
+    </div>
+  </div>
+  <br>
+  <h3>FoldingText</h3>
+  <small>
+    29CHF -
+    <a href="http://www.foldingtext.com/" class="btn btn-default btn-sm" style="font-size:0.5em;">Download</a>
+  </small>
+</section>
+
+<section class="text-center">
+  <br>
+  <img src="img/markdown/foldingtext-screen.png">
+  <br>
+</section>
+
+<section>
+  <br>
+  <table class="table table-bordered text-center" style="font-size:0.8em;">
+    <thead>
+      <tr>
+        <th>Shortcuts</th>
+        <th>Lists</th>
+        <th>Customization</th>
+        <th>Minimalism</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Pros</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:+1: CSS customization</li>
+        <li class="fragment">:+1: Scriptable editor</li>
+        <li class="fragment">:+1: Focus mode</li>
+        <li class="fragment">:+1: TOC for long doc</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h3>Cons</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:-1: Buggy Antidote integration</li>
+        <li class="fragment">:-1: Expensive</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+{# Ulysse ====================================== #}
+<section class="text-center">
+  <br>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <img src="img/markdown/ulysse.png" class="img-responsive">
+    </div>
+  </div>
+  <br>
+  <h3>Ulysse</h3>
+  <small>
+    44CHF -
+    <a href="http://www.ulyssesapp.com/" class="btn btn-default btn-sm" style="font-size:0.5em;">Download</a>
+  </small>
+</section>
+
+<section class="text-center">
+  <br>
+  <img src="img/markdown/ulysse-screen.png">
+  <br>
+</section>
+
+<section>
+  <br>
+  <table class="table table-bordered text-center" style="font-size:0.8em;">
+    <thead>
+      <tr>
+        <th>Shortcuts</th>
+        <th>Lists</th>
+        <th>Customization</th>
+        <th>Minimalism</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-danger">✕</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Pros</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:+1: Files explorer</li>
+        <li class="fragment">:+1: Chapter explorer</li>
+        <li class="fragment">:+1: TOC for long doc</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h3>Cons</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:-1: Not sexy UI</li>
+        <li class="fragment">:-1: Expensive</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+{# Write ====================================== #}
+<section class="text-center">
+  <br>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <img src="img/markdown/write.png" class="img-responsive">
+    </div>
+  </div>
+  <br>
+  <h3>Write</h3>
+  <small>
+    10CHF -
+    <a href="http://writeapp.net/" class="btn btn-default btn-sm" style="font-size:0.5em;">Download</a>
+  </small>
+</section>
+
+<section class="text-center">
+  <br>
+  <img src="img/markdown/write-screen.png">
+  <br>
+</section>
+
+<section>
+  <br>
+  <table class="table table-bordered text-center" style="font-size:0.8em;">
+    <thead>
+      <tr>
+        <th>Shortcuts</th>
+        <th>Lists</th>
+        <th>Customization</th>
+        <th>Minimalism</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-danger">✕</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+        <td><span class="fragment text-success">✓</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Pros</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:+1: Files explorer</li>
+        <li class="fragment">:+1: Isolation mode</li>
+        <li class="fragment">:+1: Publishing feature</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h3>Cons</h3>
+      <ul class="list-unstyled">
+        <li class="fragment">:-1: Isolation mode container width</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="text-center" style="background:none;box-shadow:none;">
+  <h3>And the winner is...</h3>
+  <br>
+  <p class="fragment">The one fits to your needs :blush:</p>
+</section>
+
+<section style="background:none;box-shadow:none;">
+  <h2>Web markdown</h2>
+</section>
+
+<section>
+  <h3>Parser</h3>
+  <br>
+  <div class="row text-center">
+    <div class="col-sm-4">
+        <div class="row">
+          <div class="col-sm-7 col-sm-offset-2">
+            <img src="img/markdown/php.png" alt="">
+          </div>
+        </div>
+        <br>
+        <a href="http://parsedown.org/">
+          <h4>Parsedown</h4>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <img src="img/markdown/nodejs.png" alt="">
+        <br><br>
+        <a href="https://github.com/evilstreak/markdown-js">
+          <h4>MarkdownJS</h4>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+            <img src="img/markdown/ruby.png" alt="">
+          </div>
+        </div>
+        <br>
+        <a href="https://github.com/vmg/redcarpet">
+          <h4>Redcarpet</h4>
+        </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Pico CMS</h3>
+  <img src="img/markdown/pico.png">
+</section>
+
+<section>
+  <h3>Ghost CMS</h3>
+  <img src="img/markdown/ghost.png">
+</section>
+
+<section>
+  <h3>Wordpress.com</h3>
+  <img src="img/markdown/wordpress.png">
+</section>
+
+<section>
+  <h3>typed.com</h3>
+  <img src="img/markdown/typed.com.png">
+</section>
+
+<section>
+  <h3>typed.com</h3>
+  <img src="img/markdown/typed.com-indie.png">
+</section>
+
+<section>
+  <div class="text-center">
+    <div class="avatar-wrapper bubble">
+      <div class="avatar"><img src="img/avatars/yago.png"><p>Thank you !</p></div>
+    </div>
+  </div>
+</section>
+{% endblock %}
