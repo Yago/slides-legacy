@@ -1,0 +1,160 @@
+{% extends "layout.twig" %}
+
+{% block title %}Antistatique - densite.ch 22.01.15{% endblock %}
+{% block theme %}material{% endblock %}
+{% block transition %}fade{% endblock %}
+
+{% block custom_styles %}
+<style>
+  body {color: #D40B6B;}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<section data-transition="linear" data-background="#D40B6B" >
+  <div class="row">
+    <div class="col-sm-10" style="color:#fff;">
+      <h1>Densite</h1>
+      <h4>Meeting - 22.01.2015</h4>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Élements achevés</h2>
+  <ul>
+    <li class="fragment">Affichage des <b>tuiles</b> de l'atlas</li>
+    <li class="fragment">Ajout des <b>premiers filtres</b></li>
+    <li class="fragment">Affichage des <b>"fiches"</b></li>
+    <li class="fragment">Section <b>Enjeux</b></li>
+    <li class="fragment">Section <b>Bibliographie</b></li>
+    <li class="fragment">Section <b>Définitions</b></li>
+  </ul>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-sm-8"><img src="img/densite/budget.png" alt=""></div>
+    <div class="col-sm-4">
+      <h4>Etat du budget</h4>
+      <ul>
+        <li class="fragment"><b>189</b>h utilisées</li>
+        <li class="fragment"><b>75</b>h restantes</li>
+        <li class="fragment"><b>72</b>% du projet</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Élements restants</h2>
+  <small><em>*par ordre de priorité</em></small>
+</section>
+
+<section>
+  <h3>Ajout de nouvelles valeurs entrées/calculées</h3>
+  <ul>
+    <li>Surface de bâti déterminante (SBd)</li>
+    <li>Surface de plancher déterminante (SPd)</li>
+    <li>Coefficient d'utilisation du sol (CUS)</li>
+    <li>Coefficient d'occupation du sol (COS)</li>
+    <li>Taux d'occupation des logements</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Ajout du filtre de "densité" dans l'atlas</h3>
+  <p>Quel champs (DH, DE, DHB,...) ? Sachant qu'il en faut pour chaque fiche</p>
+</section>
+
+<section>
+  <h3>Ajout d'un champs de recherche de définitions</h3>
+  <p>Champs d'autocomplétion permettant d'accéder rapidement à une définition</p>
+</section>
+
+<section>
+  <h3>Fixer le bug des "vieilles" fiches</h3>
+<pre><code data-language="html">
+Densité d'habitants (DH) (hab/Ha) <a href="/fr/definitions/dh"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>: 195719.54
+P empl./hab.: mixité fonctionnelle <a href="/fr/definitions/mixite_fonctionnellle"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>: 
+</code></pre>
+</section>
+
+<section>
+  <h3>Export Excel de l'atlas</h3>
+  <p>
+    Exportation d'un fichier (.xls ou .csv ?) tabulaire depuis l'atlas, filtré ou non.
+  </p>
+</section>
+
+<section>
+  <h3>Affichage des unités de mesure en fonction du type</h3>
+  <p>
+    Changement de l'unité (km2-Ha-m2) <b>d'affichage</b> des surfaces en fonction des <b>types</b> fiches (canton, commune, secteur, quartier) <b>ou</b> en fonction de la <b>"taille"</b> ? <br>Valeurs toujours rentrées en m<sup>2</sup>.
+  </p>
+</section>
+
+<section>
+  <h3>Review global du design</h3>
+  <p>
+    Affinage du design du site en collaboration avec noter designer.
+  </p>
+</section>
+
+<section>
+  <h3>Sélection de l'année des valeurs de la fiche (plus par valeur)</h3>
+  <p>
+    Switch global en haut de page, pour changer l'année des valeurs.
+  </p>
+</section>
+
+<section>
+  <h3>Nouveau module de tags pour l'admin</h3>
+  <p>
+    Facilité la recherche et l'ajout de tags. (nouvelle demande)
+  </p>
+</section>
+
+<section>
+  <h3>Ajout de nouveaux filtres dans l'atlas</h3>
+  <p>
+    Ajout de nouveaux filtres avec l'augmentation de la masse de fiches (50+)
+  </p>
+</section>
+
+<section>
+  <h2>En résumé</h2>
+  <small><em>*par ordre de priorité</em></small>
+  <ol style="font-size:0.9em;">
+    <li class="fragment">Ajout de nouvelles valeurs entrées/calculées</li>
+    <li class="fragment">Ajout du filtre de "densité" dans l'atlas</li>
+    <li class="fragment">Ajout d'un champs de recherche de définitions</li>
+    <li class="fragment">Fixer le bug des "vieilles" fiches</li>
+    <li class="fragment">Export Excel de l'atlas</li>
+    <li class="fragment">Affichage des unités de mesure en fonction du type</li>
+    <li class="fragment">Review global du design</li>
+    <li class="fragment">Sélection de l'année des valeurs de la fiche (plus par valeur)</li>
+    <li class="fragment">Nouveau module de tags pour l'admin</li>
+    <li class="fragment">Ajout de nouveaux filtres dans l'atlas</li>
+  </ol>
+  <br><br>
+  <p class="fragment"><b>Un oubli ? Un changement de priorité ?</b></p>
+</section>
+
+<section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1 class="text-center">
+    Merci !
+  </h1>
+  <br>
+  <br>
+  <br>
+  <br>
+</section>
+
+
+{% endblock %}

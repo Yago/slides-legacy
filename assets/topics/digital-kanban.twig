@@ -1,0 +1,53 @@
+{% extends "layout.twig" %}
+
+{% block theme %}material{% endblock %}
+{% block transition %}slide{% endblock %}
+
+{% block content %}
+<section data-markdown data-transition="linear" data-background="#2d95e3" style="color:#fff;">
+  # Digital Kanban
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-xs-5">
+      <img src="img/kanban/paper.jpg" class="img-responsive">
+    </div>
+    <div class="col-xs-2 text-center">
+      <br><br><br><br><br>
+      vs
+    </div>
+    <div class="col-xs-5">
+      <br><br><br>
+      <img src="img/kanban/tv.jpg" class="img-responsive">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Avantages :</h2>
+  <ul>
+    <li class="fragment">Remote facilité</li>
+    <li class="fragment">Meilleurs feedbacks : stats automatiques, goals</li>
+    <li class="fragment">Plus de contrôle</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Désavantages :</h2>
+  <ul>
+    <li class="fragment">Plus de présence physique</li>
+  </ul>
+</section>
+
+<section data-markdown>
+  ## Tools
+  * [Kanbanize](https://kanbanize.com/) - $9 / user / month
+  * [Kanbanflow](https://kanbanflow.com/) - $5 / user / month 
+  * [Kanban Tool](http://kanbantool.com/) - $9 / user / month
+  * [Leankit](http://leankit.com/) - $19 / user / month
+  * [Trello](https://trello.com/) - $3.75 / user / month
+  * [Overvio](https://overv.io) - gratos (Github)
+</section>
+
+{% endblock %}
